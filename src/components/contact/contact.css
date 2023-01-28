@@ -18,6 +18,7 @@
 
 .contact__content {
     display: grid;
+    background: red;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     margin: 0 auto;
@@ -50,28 +51,28 @@ form textarea {
     border-radius: 1.3rem;
 }
 
-.contact__alternative-list {
+.contact__card-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: max-content;
     gap: 1rem;
 }
 
-.alternative-card {
+.card-item {
     padding: .9rem;
     background: #333;
     color: #fff;
 }
 
-.alternative-icon {
+.card-icon {
     font-size: 2rem;
 }
 
-.alternative-card h3 {
+.card-item h3 {
     font-weight: 300;
 }
 
-.alternative-card small {
+.card-item small {
     color: #6c757d;
 }
 
