@@ -6,6 +6,12 @@ const Contact = () => {
     <section className="contact__container" id="contact">
       <h2>Contact <span>Me</span></h2>
       <div className="contact__content">
+        <form action="">
+          <input name='name' type="text" placeholder='Your Name' autoComplete='off' />
+          <input name='email' type="email" placeholder='Your Email' autoComplete='off' />
+          <textarea name="message" placeholder='Your Message'></textarea>
+          <button className="btn btn-primary">SEND MESSAGE</button>
+        </form>
         <div className="contact__card-list">
           <article className="card-item">
             <AiOutlineMail className='card-icon'/>
