@@ -6,12 +6,20 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+html {
   scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 3rem;
+}
+
+::-webkit-scrollbar {
   display: none;
 }
 
 body {
+  margin-top: -3.6rem;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -35,4 +43,10 @@ body {
 
 .btn-primary:hover {
   background: #97a15c;
+}
+
+@media screen and (max-width: 600px) {
+  :target {
+    scroll-margin-top: 0rem;
+  }
 }
