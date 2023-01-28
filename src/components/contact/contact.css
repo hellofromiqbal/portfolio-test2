@@ -79,13 +79,16 @@ form textarea {
         gap: 2rem;
     }
 
-    .contact__alternative-list {
+    .contact__card-list {
         order: 1;
+    }
+    form {
+        order: 2;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .contact__alternative-list {
+    .contact__card-list {
         grid-template-columns: 1fr;
     }
 }
