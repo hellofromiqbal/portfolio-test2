@@ -48,7 +48,10 @@ const Portfolio = () => {
         {shownData.map((datum) => (
           <article className="category-item" key={datum.id}>
             <span><h3>{datum.title}</h3></span>
-            <img src={datum.imgLg} alt={`${datum.category} ${datum.id}`} />
+            <picture>
+              <source media='(min-width: 600px)' srcSet={datum.imgLg} />
+              <img src={datum.imgSm} alt={`${datum.category} ${datum.id}`} />
+            </picture>
           </article>
         ))}
       </div>

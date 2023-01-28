@@ -1,12 +1,16 @@
 import './about.css';
-import ME from '../../assets/me2-large.jpg';
+import MESm from '../../assets/me2-small.jpg';
+import MELg from '../../assets/me2-large.jpg';
 
 const About = () => {
   return (
     <section className="about__container" id="about">
       <div className="about__content">
         <div className="about__content-photo">
-          <img src={ME} alt="me" />
+          <picture>
+            <source media='(min-width: 600px)' srcSet={MELg} />
+            <img src={MESm} alt="me" />
+          </picture>
         </div>
         <div className="about__content-textual">
           <h2>About <span>Me</span></h2>
