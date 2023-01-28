@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import NavbarFloat from "./components/navbar/NavbarFloat";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import Testimonials from "./components/testimonials/Testimonials";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <About />
       <Services />
+      <Testimonials />
       <Contact />
       <Footer />
     </div>
