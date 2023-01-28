@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(../../assets/me2.jpg);
+    background-image: url(../../assets/me2-large.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +41,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .jumbo__container {
+        background-image: url(../../assets/me2-small.jpg);
+    }
+
     .jumbo__content h3 {
         font-size: 1.5rem;
     }
